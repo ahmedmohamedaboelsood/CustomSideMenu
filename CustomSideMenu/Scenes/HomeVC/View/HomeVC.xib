@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="CustomSideMenu" customModuleProvider="target">
+            <connections>
+                <outlet property="backGroundImage" destination="uqh-8r-4j5" id="9v3-YK-p1l"/>
+                <outlet property="sideMenuTopAnchor" destination="GgL-s6-bH0" id="aG4-PL-d07"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="uqh-8r-4j5">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plant" translatesAutoresizingMaskIntoConstraints="NO" id="F0G-11-qpu">
+                    <rect key="frame" x="39.333333333333343" y="169" width="314.33333333333326" height="170.33333333333337"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Office Plants" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8h-YN-nmI">
+                    <rect key="frame" x="39.333333333333343" y="389.33333333333331" width="314.33333333333326" height="20.333333333333314"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20.329999999999998" id="ATB-gI-WhE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYr-Wb-mhH">
+                    <rect key="frame" x="39.333333333333343" y="429.66666666666669" width="314.33333333333326" height="140.00000000000006"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="DKt-Rf-ygO"/>
+                    </constraints>
+                    <string key="text">They are popular because they don't need a lot of light, plus, they are also forgiving of occasional over-watering. Peace lily plants are also known for cleaning the air, helping to remove toxins and create a nicer environment in which to work. It's tolerant of low light and a vigorous grower too.
+</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDo-Hs-i0K">
+                    <rect key="frame" x="30" y="69" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="If9-rp-hii"/>
+                        <constraint firstAttribute="width" constant="40" id="JaP-bO-Wub"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="menu_icon_150667"/>
+                    <connections>
+                        <action selector="sideMenuBtn:" destination="-1" eventType="touchUpInside" id="e64-9N-jyA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uqh-8r-4j5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="4Tr-W3-oLa"/>
+                <constraint firstItem="F0G-11-qpu" firstAttribute="width" secondItem="uqh-8r-4j5" secondAttribute="width" multiplier="0.8" id="5mz-Gl-jax"/>
+                <constraint firstItem="J8h-YN-nmI" firstAttribute="leading" secondItem="F0G-11-qpu" secondAttribute="leading" id="Ckd-5H-sAh"/>
+                <constraint firstItem="GDo-Hs-i0K" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="GgL-s6-bH0"/>
+                <constraint firstItem="J8h-YN-nmI" firstAttribute="top" secondItem="F0G-11-qpu" secondAttribute="bottom" constant="50" id="JHK-5L-kB8"/>
+                <constraint firstItem="cYr-Wb-mhH" firstAttribute="top" secondItem="J8h-YN-nmI" secondAttribute="bottom" constant="20" id="Lqy-TG-vj0"/>
+                <constraint firstItem="cYr-Wb-mhH" firstAttribute="leading" secondItem="J8h-YN-nmI" secondAttribute="leading" id="MzK-Fq-0bG"/>
+                <constraint firstItem="F0G-11-qpu" firstAttribute="height" secondItem="uqh-8r-4j5" secondAttribute="height" multiplier="0.2" id="OpG-4w-nmu"/>
+                <constraint firstItem="uqh-8r-4j5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YkO-dh-ulD"/>
+                <constraint firstItem="GDo-Hs-i0K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="g8a-1f-DTx"/>
+                <constraint firstItem="cYr-Wb-mhH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iUD-jb-IXo"/>
+                <constraint firstItem="J8h-YN-nmI" firstAttribute="trailing" secondItem="F0G-11-qpu" secondAttribute="trailing" id="jXB-Cg-0i9"/>
+                <constraint firstAttribute="bottom" secondItem="uqh-8r-4j5" secondAttribute="bottom" id="tSh-qd-9VC"/>
+                <constraint firstItem="cYr-Wb-mhH" firstAttribute="trailing" secondItem="J8h-YN-nmI" secondAttribute="trailing" id="u1V-Oa-esD"/>
+                <constraint firstItem="F0G-11-qpu" firstAttribute="top" secondItem="GDo-Hs-i0K" secondAttribute="bottom" constant="60" id="vZD-PB-8Rd"/>
+                <constraint firstItem="uqh-8r-4j5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xqW-NK-ZTv"/>
+            </constraints>
+            <point key="canvasLocation" x="12.977099236641221" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="4000" height="6000"/>
+        <image name="menu_icon_150667" width="512" height="512"/>
+        <image name="plant" width="4776" height="3184"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
